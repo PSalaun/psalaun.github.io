@@ -1,0 +1,17 @@
+---
+import MainHead from 'src/components/MainHead.astro';
+import Footer from 'src/components/Footer';
+import Nav from 'src/components/Nav';
+
+const { seo } = Astro.props;
+---
+<html lang="fr">
+	<head>
+		<MainHead {...seo}/>
+	</head>
+	<body>
+		<Nav />
+			<slot />
+		<Footer />
+	</body>
+</html>

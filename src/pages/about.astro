@@ -1,31 +1,11 @@
 ---
-import MainHead from '../components/MainHead.astro';
-import Footer from '../components/Footer/index.jsx';
-import Nav from '../components/Nav/index.jsx';
+import Layout from 'src/layouts/layout.astro';
+const seo = {
+	title: 'A propos',
+	description: "Découvrez ma philosophie"
+};
 ---
-
-<html lang="en">
-	<head>
-		<MainHead title="About | Jeanine White" description="About Jeanine White Lorem Ipsum" />
-		<style lang="scss">
-			.heroImg {
-				max-height: 24rem;
-				object-fit: cover;
-				overflow: hidden;
-
-				img {
-					width: 100%;
-				}
-			}
-
-			.bio {
-				font-size: var(--f-u1);
-				line-height: 2;
-			}
-		</style>
-	</head>
-	<body>
-		<Nav />
+<Layout seo={seo}>
 		<div class="wrapper">
 			<h1>About Jeanine</h1>
 			<div class="heroImg">
@@ -55,6 +35,4 @@ import Nav from '../components/Nav/index.jsx';
 				</p>
 			</div>
 		</div>
-		<Footer />
-	</body>
-</html>
+</Layout>
