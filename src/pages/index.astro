@@ -8,9 +8,9 @@ import Layout from '@layouts/layout.astro';
 const clients = ['Ubisoft', 'Deloitte', 'Pôle emploi', 'RSI', 'CNAMTS', 'URSSAF', 'Commission Européenne', 'Ecolo', 'STIB-MIVB', 'Consigne Greengo'];
 ---
 <Layout>
-		<header class="w-full flex flex-col items-center py-24 gap-6">
+		<header class="container mx-auto flex flex-col items-center py-24 px-6 gap-6">
 			<h1>Pierre Salaün, web developer</h1>
-			<p class="text-2xl max-w-[40ch] mt-4">Ancien consultant, je travaille désormais également avec React ou Ruby on Rails, lorsque Powerpoint ne suffit plus pour résoudre un problème.</p>
+			<p class="text-xl lg:text-2xl max-w-[40ch] mt-4">Ancien consultant, je travaille désormais également avec React ou Ruby on Rails, lorsque Powerpoint ne suffit plus pour résoudre un problème.</p>
 			<a class="mt-8" href="mailto:pierre.j.salaun@gmail.com"><Button icon="external">Me contacter</Button></a>
 			<div class="flex gap-8 mt-8">
 				<a href="https://www.linkedin.com/in/pierre-salaun/" target="_blank"><Button type="secondary" icon="external">Linkedin</Button></a>
@@ -27,8 +27,8 @@ const clients = ['Ubisoft', 'Deloitte', 'Pôle emploi', 'RSI', 'CNAMTS', 'URSSAF
 					))}
 				</div>
 			</section>
-			<section class="flex flex-col items-center py-8">
-				<div class="prose prose-xl prose-stone mt-12 marker:text-dark">
+			<section class="container mx-auto flex flex-col items-center py-8 px-4">
+				<div class="prose prose-lg lg:prose-xl prose-stone mt-12 marker:text-dark">
 					<p>En tant que développeur, j’ai collaboré à la création de 25 sites et app, utilisant principalement <strong>Gatsby</strong>, <strong>React / React Native</strong>, <strong>Ruby on Rails</strong> et <strong>Wordpress</strong></p>
 					<p>De manière générale, mes compétences couvrent :</p>
 					<ul>
