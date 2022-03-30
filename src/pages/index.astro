@@ -1,12 +1,11 @@
 ---
 // Component Imports
 import Button from '@components/Button/index.jsx';
-import PortfolioPreview from '@components/PortfolioPreview/index.jsx';
+import ClientBadge from '@components/ClientBadge/index.jsx';
 import Layout from '@layouts/layout.astro';
 
 // Data Fetching: List all Markdown posts in the repo.
-const projects = Astro.fetchContent('./project/**/*.md');
-const featuredProject = projects[0];
+const clients = ['Ubisoft', 'Deloitte', 'Pôle emploi', 'RSI', 'CNAMTS', 'URSSAF', 'Commission Européenne', 'Ecolo', 'STIB-MIVB', 'Consigne Greengo'];
 ---
 <Layout>
 		<header class="w-full flex flex-col items-center py-24 gap-6">
@@ -19,17 +18,15 @@ const featuredProject = projects[0];
 				<a href="https://drive.google.com/file/d/1uIwR3Er7mCAOIFTi3VD6ndn74zu6aQy6/view?usp=sharing" target="_blank"><Button type="secondary" icon="download">CV</Button></a>
 			</div>
 		</header>
-		<main class="wrapper mt4 mb4">
-			<div class="grid">
-				<div class="section">
-					<h3 class="sectionTitle">Selected Work</h3>
-					<PortfolioPreview project={featuredProject} />
-					<div class="tac mt4">
-						<a href="/projects">
-							<Button/>View All</Button>
-						</a>
-					</div>
+		<main>
+			<section class="bg-dark flex flex-col items-center py-8">
+				<h2 class="text-light text-xl">J'ai travaillé notamment pour</h2>
+				<div class="flex flex-row justify-center gap-6 flex-wrap max-w-5xl mt-12">
+					{clients.map(client => (
+						<ClientBadge>{client}</ClientBadge>
+					))}
 				</div>
+			</section>
 				<div class="section">
 					<h3 class="sectionTitle">About me</h3>
 					<p class="bio">
