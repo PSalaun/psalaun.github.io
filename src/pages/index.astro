@@ -3,29 +3,20 @@
 import Button from '@components/Button/index.jsx';
 import PortfolioPreview from '@components/PortfolioPreview/index.jsx';
 import Layout from '@layouts/layout.astro';
-import Image from "astro-imagetools"
 
 // Data Fetching: List all Markdown posts in the repo.
 const projects = Astro.fetchContent('./project/**/*.md');
 const featuredProject = projects[0];
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
 ---
 <Layout>
-		<header class="w-full">
-			<Image src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=75" alt="alt text" />
-			<div class="gradient"></div>
-			<div class="gradient2"></div>
-			<div class="overlay">
-				<h1 class="title">
-					<small class="subtitle">The personal site of </small>Jeanine White
-				</h1>
-				<div>
-					<span class="role">👩‍💻 Developer <span class="invert">👩‍💻 Developer</span></span>&nbsp;
-					<span class="role">🎤 Speaker <span class="invert">🎤 Speaker</span></span>&nbsp;
-					<span class="role">✏️ Writer <span class="invert">✏️ Writer</span></span>
-				</div>
-				<p class="desc">Lover of dogs, roadtrips, and poetry.</p>
+		<header class="w-full flex flex-col items-center py-24 gap-6">
+			<h1>Pierre Salaün, web developer</h1>
+			<p class="text-2xl max-w-[40ch] mt-4">Ancien consultant, je travaille désormais également avec React ou Ruby on Rails, lorsque Powerpoint ne suffit plus pour résoudre un problème.</p>
+			<a class="mt-8" href="mailto:pierre.j.salaun@gmail.com"><Button icon="external">Me contacter</Button></a>
+			<div class="flex gap-8 mt-8">
+				<a href="https://www.linkedin.com/in/pierre-salaun/" target="_blank"><Button type="secondary" icon="external">Linkedin</Button></a>
+				<a href="https://github.com/PSalaun" target="_blank"><Button type="secondary" icon="external">Github</Button></a>
+				<a href="https://drive.google.com/file/d/1uIwR3Er7mCAOIFTi3VD6ndn74zu6aQy6/view?usp=sharing" target="_blank"><Button type="secondary" icon="download">CV</Button></a>
 			</div>
 		</header>
 		<main class="wrapper mt4 mb4">
