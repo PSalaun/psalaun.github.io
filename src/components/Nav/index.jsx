@@ -9,8 +9,9 @@ const Nav = ({currentPath}) => {
 		{ label: 'portfolio', path: '/portfolio'},
 		{ label: 'ma philosophie', path: '/philosophie'},
 	];
+	console.log(currentPath)
 	return (
-		<nav class="flex justify-end py-3 px-12 lg:px-16">
+		<nav class="flex justify-center lg:justify-end py-3 px-8 lg:px-16">
 			<div class="text-lg lg:text-xl flex gap-4">
 				{links.map(link => (
 					<a href={link.path} class={isActive(link.path) ? 'font-bold' : ''}>{link.label}</a>
