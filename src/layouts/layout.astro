@@ -5,14 +5,14 @@ import Nav from '@components/Nav';
 import Contact from '@components/Contact';
 
 import 'src/styles/global.scss';
-const { seo } = Astro.props;
+const { currentPath, seo } = Astro.props;
 ---
 <html lang="fr">
 	<head>
 		<MainHead {...seo}/>
 	</head>
 	<body class="bg-light">
-		<Nav />
+		<Nav currentPath={currentPath} />
 			<slot />
 		<Contact />
 		<Footer />
