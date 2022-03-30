@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer {
+  * {
+    @apply text-dark;
+    font-family: "Trebuchet MS", Arial;
+  }
+
+  a {
+    font-family: Arial;
+  }
+}
