@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "test": "astro check"
   },
   "devDependencies": {
     "@astrojs/renderer-preact": "^0.5.0",
@@ -14,6 +15,7 @@
     "path": "^0.12.7",
     "postcss": "^8.4.12",
     "sass": "^1.49.9",
-    "tailwindcss": "^3.0.23"
+    "tailwindcss": "^3.0.23",
+    "astro-imagetools": "^0.2.11"
   }
 }
