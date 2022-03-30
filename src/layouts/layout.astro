@@ -2,6 +2,7 @@
 import MainHead from '@components/MainHead.astro';
 import Footer from '@components/Footer';
 import Nav from '@components/Nav';
+import Contact from '@components/Contact';
 
 import 'src/styles/global.scss';
 const { seo } = Astro.props;
@@ -13,6 +14,7 @@ const { seo } = Astro.props;
 	<body class="bg-light">
 		<Nav />
 			<slot />
+		<Contact />
 		<Footer />
 	</body>
 </html>
