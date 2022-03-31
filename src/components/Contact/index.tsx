@@ -1,7 +1,7 @@
-import {h} from 'preact';
+import {FunctionComponent} from 'preact';
 import Button from '@components/Button';
 
-const Contact = () => {
+const Contact: FunctionComponent = () => {
   return (
     <section class="flex flex-col items-center px-4 my-16">
       <div class="flex flex-col items-center border p-8 w-fit">

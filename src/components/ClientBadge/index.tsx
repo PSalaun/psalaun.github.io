@@ -1,6 +1,6 @@
-import { h } from 'preact';
+import { FunctionComponent } from 'preact';
 
-function ClientBadge({ children }) {
+const ClientBadge: FunctionComponent = ({ children }) => {
 	return (
 		<div class="bg-light py-4 px-6 text-xl">
 			{children}

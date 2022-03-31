@@ -1,7 +1,15 @@
-import {h} from 'preact';
+import {FunctionComponent} from 'preact';
 import Button from '@components/Button';
 
-const ProjectCard = ({project}) => {
+type Project = {
+  client: string;
+  tag: string;
+  title: string;
+  description: string;
+  url?: string;
+}
+
+const ProjectCard: FunctionComponent<{ project: Project}> = ({project}) => {
   return (
     <div class="flex flex-col border p-6">
       <div className="flex justify-between items-center font-ui">
