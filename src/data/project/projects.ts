@@ -1,4 +1,6 @@
-export default [
+import { Project } from '@components/ProjectCard';
+
+const projects: Project[] = [
   {
     title: "Création du nouveau site fédéral",
     client: "Ecolo",
@@ -81,3 +83,5 @@ export default [
     url: "https://lewagon.com",
   },
 ]
+
+export default projects;

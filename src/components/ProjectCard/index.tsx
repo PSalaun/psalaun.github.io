@@ -1,7 +1,7 @@
 import {FunctionComponent} from 'preact';
 import Button from '@components/Button';
 
-type Project = {
+export type Project = {
   client: string;
   tag: string;
   title: string;
