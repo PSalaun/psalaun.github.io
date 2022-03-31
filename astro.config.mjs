@@ -7,5 +7,8 @@ export default defineConfig({
 	renderers: ['@astrojs/renderer-preact'],
 	vite: {
 		plugins:[astroImagePlugin],
+	},
+	buildOptions: {
+		site: 'https://psalaun.github.io'
 	}
 });
