@@ -1,0 +1,29 @@
+// https://css-tricks.com/bold-on-hover-without-the-layout-shift/
+.menuitem {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+
+  &:hover {
+    font-weight: bold;
+  }
+  &:after {
+    content: attr(data-text);
+    content: attr(data-text) / '';
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    user-select: none;
+    pointer-events: none;
+    font-weight: bold;
+
+    @media speech {
+      display: none;
+    }
+  }
+  &Active {
+    font-weight: bold;
+  }
+}
