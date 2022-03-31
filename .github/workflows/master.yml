@@ -29,6 +29,8 @@ jobs:
       # Install dependencies with yarn
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+      - name: Typecheck
+        run: yarn check
 
       # Build the project and add .nojekyll file to supress default behaviour
       - name: Build
