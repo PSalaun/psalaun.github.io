@@ -11,7 +11,7 @@ const Nav = ({currentPath}) => {
 		{ label: 'ma philosophie', path: '/philosophie'},
 	];
 	return (
-		<nav class="flex justify-center lg:justify-end py-3 px-8 lg:px-16">
+		<nav class="flex justify-center lg:justify-end py-3 px-4 lg:px-16">
 			<div class="text-lg lg:text-xl flex gap-4">
 				{links.map(link => (
 					<a data-text={link.label} href={link.path} class={isActive(link.path, currentPath) ? Styles.menuitemActive : Styles.menuitem}>{link.label}</a>
