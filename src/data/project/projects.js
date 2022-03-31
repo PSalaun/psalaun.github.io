@@ -59,4 +59,18 @@ export default [
     tag: "Expérience",
     url: "https://arletty-webdoc.fr",
   },
+  {
+    title: "Site vitrine de l'agence",
+    client: "Artimon Digital",
+    description: "Design et développement du site multilingue de mon agence Artimon, avec Gatsby et ChakraUI. Hébergement sur Netlify, contenu géré avec Wordpress en headless avec WPGraphQL.",
+    tag: "Site vitrine",
+    url: "https://artimon.be",
+  },
+  {
+    title: "Site de réservation de services en kinésithérapie",
+    client: "Uperform",
+    description: "Création avec Gatsby, ChakraUI et Wordpress headless d'un site présentant les services d'un réseau de centres de kinésithérapie en Belgique. Intégration du SaaS Kinequick pour la gestion des réservations.",
+    tag: "Site vitrine",
+    url: "https://uperform.be",
+  },
 ]
