@@ -1,0 +1,28 @@
+---
+import ProjectCard from '@components/ProjectCard/index.jsx';
+import Layout from '@layouts/layout.astro';
+import projects from '@data/project/projects.js';
+import { Markdown } from 'astro/components';
+
+const seo = {
+	title: 'Portfolio',
+	description: "Parcourez une sélection des projets sur lesquels j'ai travaillé en tant que développeur"
+}
+---
+<Layout currentPath={"/portfolio"} seo={seo}>
+	<header class="container mx-auto flex flex-col items-center py-24 px-6 gap-6">
+		<h1>Portfolio</h1>
+	</header>
+	<main>
+		<section class="container mx-auto flex flex-col items-center py-8 px-4">
+			<Markdown class="prose prose-lg mb-12">
+				Les projets ci-dessous représentent l'éventail de compétences que j'ai mobilisées en tant que développeur,
+				pour des clients allant de la multinationale à la TPE, en passant par le secteur public et la startup tech.\
+				Le design graphique de ces projets a généralement été fait par des graphistes ou UI designers.
+			</Markdown>
+			<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+				{projects.map((project) => <ProjectCard project={project} />)}
+			</div>
+		</section>
+	</main>
+</Layout>
