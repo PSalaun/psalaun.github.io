@@ -73,4 +73,11 @@ export default [
     tag: "Site vitrine",
     url: "https://uperform.be",
   },
+  {
+    title: "Mentorat sur Ruby et Ruby on Rails",
+    client: "Le Wagon",
+    description: "Professeur assistant ou professeur lors de plusieurs promotions du bootcamp Le Wagon, à Berlin, Paris et Bruxelles. Principalement sur la partie Ruby on Rails et les projets finaux.",
+    tag: "Mentorat",
+    url: "https://lewagon.com",
+  },
 ]
