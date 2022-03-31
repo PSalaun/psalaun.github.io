@@ -1,13 +1,16 @@
 {
-  "name": "@example/portfolio",
-  "version": "0.0.1",
-  "private": true,
+  "name": "porfolio-pierre-salaun",
+  "version": "1.0.0",
+  "private": false,
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "test": "astro check"
+  },
+  "engines": {
+    "node": "16.13.2"
   },
   "devDependencies": {
     "@astrojs/preact": "^0.0.2",

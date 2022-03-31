@@ -1,24 +1,20 @@
-# Astro Starter Kit: Portfolio
+# Portfolio de Pierre Salaün
+
+Développé avec Astro, Typescript, Preact, TailwindCSS.
+
+## Démarrer rapidement
+
+Pour démarrer le serveur localement :
 
 ```
-npm init astro -- --template portfolio
+yarn
+yarn dev
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/portfolio)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
+## Autres commandes
 
 | Command           | Action                                       |
 |:----------------  |:-------------------------------------------- |
-| `npm install`     | Installs dependencies                        |
-| `npm run dev`     | Starts local dev server at `localhost:3000`  |
-| `npm run build`   | Build your production site to `./dist/`      |
-| `npm run preview` | Preview your build locally, before deploying |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://github.com/withastro/astro) or jump into our [Discord server](https://astro.build/chat).
+| `yarn build`      | Lance un build du site vers `./dist/`        |
+| `yarn preview`    | Démarre le serveur pour la version built     |
+| `yarn check`      | Type check le projet                         |
