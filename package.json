@@ -1,7 +1,16 @@
 {
   "name": "porfolio-pierre-salaun",
   "version": "1.0.0",
+  "description": "Site présentant mes projets et mon parcours",
   "private": false,
+  "licence": "UNLICENSED",
+  "homepage": "https://psalaun.github.io",
+  "repository": "github:PSalaun/psalaun.github.io",
+  "author": {
+    "name": "Pierre Salaün",
+    "email": "pierre.j.salaun@gmail.com",
+    "url": "http://psalaun.github.io"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -10,7 +19,7 @@
     "test": "astro check"
   },
   "engines": {
-    "node": "16.13.2"
+    "node": "16.14.0"
   },
   "devDependencies": {
     "@astrojs/preact": "^0.0.2",
