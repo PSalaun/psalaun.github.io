@@ -1,5 +1,7 @@
 ---
 import Layout from '@layouts/layout.astro';
+import { Markdown } from 'astro/components';
+
 const seo = {
 	title: 'Philosophie',
 	description: "Découvrez ma philosophie"
@@ -11,13 +13,35 @@ const seo = {
 		</header>
 		<main>
 			<section class="container mx-auto flex flex-col items-center py-8 px-4">
-				<div class="prose prose-lg lg:prose-xl prose-stone marker:text-dark">
-					<p>En tant que professionnel, je me suis forgé un profil de polyvalent plutôt que d’expert. Je m’épanouis le plus dans les rôles qui nécessitent d’intervenir entre les lignes, qu’elles soient fonctionnelles ou hiérarchiques. C’est par frustration d’être limité à un pouvoir d’influence et de planification, que j’ai étendu au bout de 6 ans de carrière mes compétences au développement web, afin de pouvoir agir sur une plus grande partie de la chaîne de valeur.</p>
-					<p>Cette approche me permet d’intervenir aussi bien sur le domaine métier que sur le domaine technique, afin d’adresser le besoin là où la solution est la plus efficace. Je vois la création de code comme étant un dernier recours plutôt qu’une solution universelle, d’autant plus que je connais désormais les contraintes liés à la maintenance dans le temps d’un outil informatique.</p>
-					<p>Ma posture en tant que développeur est dans la lignée de cette subordination de la technique au métier : l’important est de délivrer le plus vite possible, en s’efforçant de minimiser les contraintes future. Cela passe par exemple par l’emploi de technologies éprouvées plutôt que la recherche permanente de la dernière tendance ; par le choix de solutions sur étagère plutôt que sur la recréation d’outils qui ont été déjà polis par des milliers d’utilisateurs ; par l’open source si possible, mais sans renier les outils commerciaux dont le support est souvent plus efficace pour un interlocuteur non technique.</p>
-					<p>Dans l’exercice de mon art, je suis attaché aux choses simples qui se chargent vite et se comprennent rapidement. Ce site en est le manifeste : conçu avec une technologie open source récente (Astro), il me permet d’être productif en tant que développeur, sans vous impacter vous, lecteur de ce texte, par la présence de fonctionnalités superflues ou le téléchargement de monceaux de code inutiles. Ce site se charge très rapidement, même dans le métro ou dans une zone au réseau de faible qualité ; il propose un confort de lecture optimal grâce à des couleurs contrastées et des polices éprouvées ; sa structure reprend des standards que vous avez vu des centaines de fois auparavant, limitant la charge cognitive pour que vous l’appréhendiez ; sa navigation est aisée, même avec un clavier.</p>
-					<p>Il ne gagnera jamais une récompense pour sa technique ou son graphisme, mais il remplit sa mission de façon efficiente.</p>
-				</div>
+				<Markdown class="prose prose-lg lg:prose-xl prose-stone marker:text-dark">
+					En tant que professionnel, je me suis forgé un profil de polyvalent plutôt que d’expert. 
+					Je m’épanouis le plus dans les rôles qui nécessitent d’intervenir entre les lignes, qu’elles soient fonctionnelles ou hiérarchiques. 
+					C’est par envie d'aller plus loin qu'un pouvoir d’influence et de planification, que j’ai étendu au bout de 6 ans de carrière mes compétences au développement web, 
+					afin de pouvoir agir sur une plus grande partie de la chaîne de valeur.
+					\
+					\
+					Cette approche me permet d’intervenir aussi bien sur le domaine métier que sur le domaine technique,
+					afin d’adresser le besoin là où la solution est la plus efficace. Je vois la création de code comme étant un dernier recours plutôt qu’une solution universelle,
+					d’autant plus que je connais désormais les contraintes liés à la maintenance dans le temps d’un outil informatique.
+					\
+					\
+					Ma posture en tant que développeur est dans la lignée de cette subordination de la technique au métier : l’important est de délivrer le plus vite possible, en s’efforçant de minimiser les contraintes future.
+					Cela passe par exemple par l’emploi de technologies éprouvées plutôt que la recherche permanente de la dernière tendance ; 
+					par le choix de solutions sur étagère plutôt que sur la recréation d’outils qui ont été déjà polis par des milliers d’utilisateurs ; 
+					par l’open source si possible, mais sans renier les outils commerciaux dont le support est souvent plus efficace pour un interlocuteur non technique.
+					\
+					\
+					Dans l’exercice de mon métier, je suis attaché aux choses simples qui se chargent vite et se comprennent rapidement. 
+					Ce site en est le manifeste : conçu avec Astro, une technologie open source certes encore expérimentale mais qui apporte un nouveau paradigme prometteur, 
+					il me permet d’être productif en tant que développeur, sans vous impacter vous, lecteur de ce texte, par la présence de fonctionnalités superflues 
+					ou le téléchargement de monceaux de code inutiles. Ce site se charge très rapidement, même dans le métro ou dans une zone au réseau de faible qualité ; 
+					il propose un confort de lecture optimal grâce à des couleurs contrastées et des polices éprouvées ; 
+					sa structure reprend des standards que vous avez vu des centaines de fois auparavant, limitant la charge cognitive pour que vous l’appréhendiez ; 
+					sa navigation est aisée, même avec un clavier.
+					\
+					\
+					Il n'est pas destiné à gagner une récompense pour sa technique ou son graphisme, mais il remplit sa mission de façon efficiente.
+				</Markdown>
 			</section>
 		</main>
 </Layout>
